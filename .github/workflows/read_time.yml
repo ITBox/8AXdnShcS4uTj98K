@@ -15,6 +15,17 @@ jobs:
       REPOSITORY: ${{ github.repository }}
       YEAR: ${{ vars.YEAR }}
       TOKEN: ${{ secrets.TOKEN }}
+      BOOK_DATABASE_NAME: ${{ vars.BOOK_DATABASE_NAME }}
+      AUTHOR_DATABASE_NAME: ${{ vars.AUTHOR_DATABASE_NAME }}
+      CATEGORY_DATABASE_NAME: ${{ vars.CATEGORY_DATABASE_NAME }}
+      BOOKMARK_DATABASE_NAME: ${{ vars.BOOKMARK_DATABASE_NAME }}
+      REVIEW_DATABASE_NAME: ${{ vars.REVIEW_DATABASE_NAME }}
+      CHAPTER_DATABASE_NAME: ${{ vars.CHAPTER_DATABASE_NAME }}
+      YEAR_DATABASE_NAME: ${{ vars.YEAR_DATABASE_NAME }}
+      WEEK_DATABASE_NAME: ${{ vars.WEEK_DATABASE_NAME }}
+      MONTH_DATABASE_NAME: ${{ vars.MONTH_DATABASE_NAME }}
+      DAY_DATABASE_NAME: ${{ vars.DAY_DATABASE_NAME }}
+    if: ${{ vars.WEREAD2NOTION != 'true' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
