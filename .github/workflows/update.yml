@@ -1,0 +1,14 @@
+name: update
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+permissions:
+    contents: write
+    actions: write
+jobs:
+  sync:
+    uses: malinkang/reusable-workflows/.github/workflows/reusable-pull-and-sync.yml@main
+    secrets:
+        PAT: ${{ secrets.PAT }}
