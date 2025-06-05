@@ -25,6 +25,7 @@ jobs:
       MONTH_DATABASE_NAME: ${{ vars.MONTH_DATABASE_NAME }}
       DAY_DATABASE_NAME: ${{ vars.DAY_DATABASE_NAME }}
       WEREAD2NOTION: ${{ vars.WEREAD2NOTION }}
+      STATUS_COMPLETE: ${{ vars.STATUS_COMPLETE }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
