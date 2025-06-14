@@ -4,4 +4,4 @@ github-heatmap==1.3.7
 retrying==1.3.4
 pendulum==3.1.0
 python-dotenv==1.1.0
-weread2notionpro==0.5.6
+weread2notionpro==0.5.8
